@@ -14,5 +14,6 @@ class MyApp extends StatelessWidget{
     //return MaterialApp(Text("Hello Aditya",textDirection: TextDirection.rtl));
 
     return MaterialApp(home: Scaffold(body: Text("hello Aditya"),)); 
+    print("Hello adi");
   }
 }     
