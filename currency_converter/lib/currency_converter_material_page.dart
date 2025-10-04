@@ -151,21 +151,19 @@ class CurrencyConverterMaterialPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Container(
-              color: Colors.black,
-              child: Text(
-                "0",
-                style: TextStyle(
-                  fontSize: 40,
-                  fontWeight: FontWeight.bold,
-                  color: Color.fromARGB(255, 255, 255, 255),
-                ),
+            Text(
+              "0",
+              style: TextStyle(
+                fontSize: 40,
+                fontWeight: FontWeight.bold,
+                color: Color.fromARGB(255, 255, 255, 255),
               ),
             ),
 
             //Padding
             Container(
-              padding: const EdgeInsets.symmetric(horizontal: 8),
+              padding: const EdgeInsets.symmetric(horizontal: 10),
+              margin: const EdgeInsets.symmetric(vertical: 10),
               child: TextField(
                 style: TextStyle(color: Color.fromARGB(255, 0, 0, 0)),
                 decoration: InputDecoration(
@@ -196,6 +194,25 @@ class CurrencyConverterMaterialPage extends StatelessWidget {
                 keyboardType: TextInputType.numberWithOptions(
                   decimal: true,
                   signed: true,
+                ),
+              ),
+            ),
+
+            ///Adding button
+            TextButton(
+              onPressed: () {
+                debugPrint('Button is clicked');
+              },
+              child: Text("Convert"),
+              style: ButtonStyle(
+                backgroundColor: MaterialStatePropertyAll(Colors.black),
+                foregroundColor: MaterialStatePropertyAll(Colors.white),
+                fixedSize: MaterialStatePropertyAll(Size(double.infinity, 50)),
+                //shape: MaterialStatePropertyAll(CircleBorder()),
+                shape: MaterialStatePropertyAll(
+                  RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10),
+                  ),
                 ),
               ),
             ),
