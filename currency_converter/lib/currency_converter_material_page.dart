@@ -12,13 +12,25 @@ class CurrencyConverterMaterialPage extends StatelessWidget {
 
     */
 
-    //Column widget demo practice
+    //Column widget demo practice with Center class
+    /*
     return const Scaffold(
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [Text("0")],
         ),
+      ),
+    );
+  */
+
+    //Column widget demo practice without Center class
+
+    return const Scaffold(
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [Text("0")],
       ),
     );
   }
