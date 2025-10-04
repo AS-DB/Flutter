@@ -1,3 +1,4 @@
+import 'package:currency_converter/currency_converter_material_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 
@@ -15,8 +16,18 @@ class MyApp extends StatelessWidget {
     //return MaterialApp(home: Scaffold(body: Text("hello Aditya")));
 
     //shifting text in center
+
+    /*
     return MaterialApp(
-      home: Scaffold(body: Center(child: Text("Hello"))),
+      home: Scaffold(
+        body: Center(
+          child:Text("Hello")
+        ),
+      )
     );
+
+    */
+    //Shorting the wigettree by creating the  another class file for Scaffold in other class and calling in home
+    return MaterialApp(home: CurrencyConverterMaterialPage());
   }
 }
