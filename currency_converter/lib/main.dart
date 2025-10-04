@@ -1,6 +1,6 @@
 import 'package:currency_converter/currency_converter_material_page.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart'; //For Andriod
+import 'package:flutter/cupertino.dart'; //For IOS
 
 void main() {
   runApp(MyApp());
