@@ -27,6 +27,7 @@ class MyApp extends StatelessWidget {
     );
 
     */
+
     //Shorting the wigettree by creating the  another class file for Scaffold in other class and calling in home
     return MaterialApp(home: CurrencyConverterMaterialPage());
   }

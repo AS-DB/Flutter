@@ -35,14 +35,47 @@ class CurrencyConverterMaterialPage extends StatelessWidget {
       ),
     );
 */
+
     //Column with color
-    return const Scaffold(
+    /* return const Scaffold(
       body: ColoredBox(
         color: Color.fromRGBO(237, 7, 7, 0.502),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [Text("0")],
+        ),
+      ),
+    );
+  */
+
+    //Styling the text and its different method and Scafflod bacgground color change
+    return const Scaffold(
+      backgroundColor: Color.fromARGB(
+        255,
+        0,
+        0,
+        0,
+      ), // Fully opaque black background
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Text(
+              "0",
+              style: TextStyle(
+                fontSize: 40,
+                fontWeight: FontWeight.bold,
+                color: Color.fromARGB(
+                  255,
+                  255,
+                  255,
+                  255,
+                ), // White color for text
+              ),
+            ),
+          ],
         ),
       ),
     );
