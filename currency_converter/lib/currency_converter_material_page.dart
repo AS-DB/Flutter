@@ -85,7 +85,9 @@ class CurrencyConverterMaterialPage extends StatelessWidget {
       ),
     );*/
 
-    //Adding other widgets : textField and other methods within it
+    ///Adding other widgets : textField and other methods within it
+
+    /*
     return Scaffold(
       backgroundColor: Color.fromARGB(255, 122, 163, 184),
       body: Center(
@@ -133,6 +135,68 @@ class CurrencyConverterMaterialPage extends StatelessWidget {
               keyboardType: TextInputType.numberWithOptions(
                 decimal: true,
                 signed: true,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+*/
+
+    ///padding or Cointainer
+    return Scaffold(
+      backgroundColor: Color.fromARGB(255, 122, 163, 184),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Container(
+              color: Colors.black,
+              child: Text(
+                "0",
+                style: TextStyle(
+                  fontSize: 40,
+                  fontWeight: FontWeight.bold,
+                  color: Color.fromARGB(255, 255, 255, 255),
+                ),
+              ),
+            ),
+
+            //Padding
+            Container(
+              padding: const EdgeInsets.symmetric(horizontal: 8),
+              child: TextField(
+                style: TextStyle(color: Color.fromARGB(255, 0, 0, 0)),
+                decoration: InputDecoration(
+                  /*label: Text(
+                    "Please Enter the Amount in USD",
+                    style: TextStyle(color: Colors.white),
+                  ),*/
+                  //labelText: "Please Enter the Amount in USD",
+                  //helpertext:"Please Enter the Amount in USD"
+                  hintText: "Please enter the text",
+                  hintStyle: TextStyle(
+                    fontSize: 21,
+                    color: Color.fromARGB(255, 0, 0, 0),
+                  ),
+                  prefixIcon: Icon(Icons.monetization_on_outlined),
+                  prefixIconColor: Color.fromARGB(
+                    255,
+                    0,
+                    0,
+                    0,
+                  ), //we have prefix , suffix and all here prefixIcon also
+                  filled: true,
+                  fillColor: Color.fromARGB(255, 244, 244, 244),
+                  focusedBorder: border,
+                  enabledBorder: border,
+                ),
+
+                keyboardType: TextInputType.numberWithOptions(
+                  decimal: true,
+                  signed: true,
+                ),
               ),
             ),
           ],
