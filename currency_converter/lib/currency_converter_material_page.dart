@@ -5,6 +5,9 @@ class CurrencyConverterMaterialPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final border = OutlineInputBorder(
+      borderRadius: BorderRadius.all(Radius.circular(40)),
+    );
     /*
     return MaterialApp(
       home: Scaffold(body: Center(child: Text("Hello"))),
@@ -12,7 +15,7 @@ class CurrencyConverterMaterialPage extends StatelessWidget {
 
     */
 
-    //Column widget demo practice with Center class
+    ///Column widget demo practice with Center class
     /*
     return const Scaffold(
       body: Center(
@@ -24,7 +27,7 @@ class CurrencyConverterMaterialPage extends StatelessWidget {
     );
   */
 
-    //Column widget demo practice without Center class
+    ///Column widget demo practice without Center class
 
     /*
     return const Scaffold(
@@ -49,7 +52,9 @@ class CurrencyConverterMaterialPage extends StatelessWidget {
     );
   */
 
-    //Styling the text and its different method and Scafflod bacgground color change
+    ///Styling the text and its different method and Scafflod background color change
+
+    /*
     return const Scaffold(
       backgroundColor: Color.fromARGB(
         255,
@@ -73,6 +78,61 @@ class CurrencyConverterMaterialPage extends StatelessWidget {
                   255,
                   255,
                 ), // White color for text
+              ),
+            ),
+          ],
+        ),
+      ),
+    );*/
+
+    //Adding other widgets : textField and other methods within it
+    return Scaffold(
+      backgroundColor: Color.fromARGB(255, 122, 163, 184),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Text(
+              "0",
+              style: TextStyle(
+                fontSize: 40,
+                fontWeight: FontWeight.bold,
+                color: Color.fromARGB(255, 255, 255, 255),
+              ),
+            ),
+
+            //textstyle +Decoration of text in text field
+            TextField(
+              style: TextStyle(color: Color.fromARGB(255, 0, 0, 0)),
+              decoration: InputDecoration(
+                /*label: Text(
+                  "Please Enter the Amount in USD",
+                  style: TextStyle(color: Colors.white),
+                ),*/
+                //labelText: "Please Enter the Amount in USD",
+                //helpertext:"Please Enter the Amount in USD"
+                hintText: "Please enter the text",
+                hintStyle: TextStyle(
+                  fontSize: 21,
+                  color: Color.fromARGB(255, 0, 0, 0),
+                ),
+                prefixIcon: Icon(Icons.monetization_on_outlined),
+                prefixIconColor: Color.fromARGB(
+                  255,
+                  0,
+                  0,
+                  0,
+                ), //we have prefix , suffix and all here prefixIcon also
+                filled: true,
+                fillColor: Color.fromARGB(255, 244, 244, 244),
+                focusedBorder: border,
+                enabledBorder: border,
+              ),
+
+              keyboardType: TextInputType.numberWithOptions(
+                decimal: true,
+                signed: true,
               ),
             ),
           ],
