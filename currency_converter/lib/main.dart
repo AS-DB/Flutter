@@ -12,8 +12,11 @@ class MyApp extends StatelessWidget {
     //return MaterialApp(Text("Hello Aditya",textDirection: TextDirection.rtl));
 
     //using MaterialApp component here
-    return MaterialApp(home: Scaffold(body: Text("hello Aditya")));
+    //return MaterialApp(home: Scaffold(body: Text("hello Aditya")));
 
     //shifting text in center
+    return MaterialApp(
+      home: Scaffold(body: Center(child: Text("Hello"))),
+    );
   }
 }
